@@ -65,6 +65,9 @@ main h1{
    .cardContainer .second{
     width: 100%;
    }
+   .heading .heading2 h1{
+      font-size: 40px;
+   }
 }
 /* Start purging... */
 @tailwind utilities;
