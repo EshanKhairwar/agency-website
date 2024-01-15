@@ -1,0 +1,70 @@
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,400;0,500;1,300;1,400;1,500&display=swap');
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+nav h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: orange;
+}
+
+main h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 72px;
+}
+
+.cardContainer h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.cardContainer .first{
+    width: 40%;
+}
+
+.cardContainer .second{
+    width: 40%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200pxd;
+    gap:30px;
+}
+
+
+
+
+.card{
+    background-color: blue;
+}
+
+
+@media (max-width:600px) {
+   .cardContainer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+   } 
+   .cardContainer .first{
+    width: 100%;
+   }
+   .cardContainer .second{
+    width: 100%;
+   }
+}
+/* Start purging... */
+@tailwind utilities;
